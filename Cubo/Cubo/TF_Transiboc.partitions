@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0474beaf-8214-4caa-967d-6d27409f8ba9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TF_Transiboc</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT Ventas</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="63606f29-83ab-466e-a5d9-0313d1e13220">
+          <ID>FACT Ventas</ID>
+          <Name>FACT Ventas</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0dba35c6-7c03-49a2-81ae-7e1281a3fe65">
+            <DataSourceViewID>TF_Transiboc</DataSourceViewID>
+            <TableID>dbo_FACTVentas</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT Reclamos</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="44ff325a-ef69-4007-9b79-42face6e6b99">
+          <ID>FACT Reclamos</ID>
+          <Name>FACT Reclamos</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ac02a0e2-341c-48f6-b758-af6b7d49dcc8">
+            <DataSourceViewID>TF_Transiboc</DataSourceViewID>
+            <TableID>dbo_FACTReclamos</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT Logistica</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cb4b007d-8147-4b42-9cab-71a0a689d855">
+          <ID>FACT Logistica</ID>
+          <Name>FACT Logistica</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cb5e2e8b-e1bc-4382-8c4b-e0a431cbcc0a">
+            <DataSourceViewID>TF_Transiboc</DataSourceViewID>
+            <TableID>dbo_FACTLogistica</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

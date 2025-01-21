@@ -1,0 +1,501 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="169d6e72-f325-4da6-b49b-342cf8b51916" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TF_Transiboc</ID>
+  <Name>TF_Transiboc</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>TF_Transiboc</DataSourceID>
+  <Schema>
+    <xs:schema id="TF_Transiboc" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TF_Transiboc" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="51bda8d8-9895-4d15-bf0b-b0bae707733a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIMAlmacen" msprop:design-time-name="d971ffc1-9282-43d3-acc6-76037bbc860a" msprop:DbTableName="DIMAlmacen" msprop:FriendlyName="DIMAlmacen" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AlmacenID" msprop:design-time-name="7fe883e1-f109-4f72-942c-29e11897be36" msprop:DbColumnName="AlmacenID" msprop:FriendlyName="AlmacenID" type="xs:int" />
+                  <xs:element name="Capacidad" msprop:design-time-name="80df2591-1392-4da9-862d-63fa773ce670" msprop:DbColumnName="Capacidad" msprop:FriendlyName="Capacidad" type="xs:int" minOccurs="0" />
+                  <xs:element name="Distrito" msprop:design-time-name="446c8b20-72e3-4d98-b8aa-7d1841806bf7" msprop:DbColumnName="Distrito" msprop:FriendlyName="Distrito" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sucursal" msprop:design-time-name="862394b3-c0c4-45be-830f-45f9148a31b1" msprop:DbColumnName="Sucursal" msprop:FriendlyName="Sucursal" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMCliente" msprop:design-time-name="449193f3-eaaf-4f67-b2d4-201535f3b8b7" msprop:DbTableName="DIMCliente" msprop:FriendlyName="DIMCliente" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ClienteID" msprop:design-time-name="24e056c3-8919-41ed-8c29-c9b81eed182b" msprop:DbColumnName="ClienteID" msprop:FriendlyName="ClienteID" type="xs:int" />
+                  <xs:element name="CodDoc" msprop:design-time-name="08401871-f7fa-43f2-837f-b3002ba2e2a6" msprop:DbColumnName="CodDoc" msprop:FriendlyName="CodDoc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TipDoc" msprop:design-time-name="ea0e9179-2983-43f1-9d41-3a2881735c53" msprop:DbColumnName="TipDoc" msprop:FriendlyName="TipDoc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nombre" msprop:design-time-name="59cabcab-8a32-49dc-8dba-26e6f1d72c22" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Apellido" msprop:design-time-name="35a575e1-ab35-492d-9805-6c25681cf75b" msprop:DbColumnName="Apellido" msprop:FriendlyName="Apellido" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Direccion" msprop:design-time-name="44e6e190-b6fe-45a2-a78d-4986506bcacd" msprop:DbColumnName="Direccion" msprop:FriendlyName="Direccion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Telefono" msprop:design-time-name="41a6de64-91c0-42c9-a805-e95f718aada0" msprop:DbColumnName="Telefono" msprop:FriendlyName="Telefono" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMEmpleado" msprop:design-time-name="09214fbf-23dc-4c54-8ced-245d33065603" msprop:DbTableName="DIMEmpleado" msprop:FriendlyName="DIMEmpleado" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="EmpleadoID" msprop:design-time-name="dc235ac9-7131-441f-8467-0fcd8e1786b1" msprop:DbColumnName="EmpleadoID" msprop:FriendlyName="EmpleadoID" type="xs:int" />
+                  <xs:element name="CodDoc" msprop:design-time-name="f739bde3-4727-436f-9bc1-d1df7538c6c5" msprop:DbColumnName="CodDoc" msprop:FriendlyName="CodDoc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nombre" msprop:design-time-name="6e24e2a0-92f1-4c6c-8f2d-83fd1133a92e" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Apellido" msprop:design-time-name="37603d2a-95cd-4370-bb1d-3ed4f480e246" msprop:DbColumnName="Apellido" msprop:FriendlyName="Apellido" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="831e2e1d-fd3c-406b-9f27-2c6fdff4d7e4" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sucursal_Trabajo" msprop:design-time-name="5173590b-83c2-4471-b011-44a821d02504" msprop:DbColumnName="Sucursal_Trabajo" msprop:FriendlyName="Sucursal_Trabajo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMEnvio" msprop:design-time-name="58d763ec-162c-4474-a566-ff7223c3fc46" msprop:DbTableName="DIMEnvio" msprop:FriendlyName="DIMEnvio" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="EnvioID" msprop:design-time-name="16865e86-a7f8-4825-a602-8b3efab2a211" msprop:DbColumnName="EnvioID" msprop:FriendlyName="EnvioID" type="xs:int" />
+                  <xs:element name="Descripcion" msprop:design-time-name="623cd10b-17d8-4f1c-94ac-919b8457b29e" msprop:DbColumnName="Descripcion" msprop:FriendlyName="Descripcion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="6f3ba889-8b01-4d0b-b566-25c6c947ffba" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMFecha" msprop:design-time-name="bdd9128c-3707-4dea-b987-d3a4f329276d" msprop:DbTableName="DIMFecha" msprop:FriendlyName="DIMFecha" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FechaID" msprop:design-time-name="0ba0685c-c5d0-47a7-87e9-3dff55f489f9" msprop:DbColumnName="FechaID" msprop:FriendlyName="FechaID" type="xs:int" />
+                  <xs:element name="Dia_completo" msprop:design-time-name="6fa924d4-a9f6-4d01-b360-ad6e99e047aa" msprop:DbColumnName="Dia_completo" msprop:FriendlyName="Dia_completo" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Dia" msprop:design-time-name="85917e93-a108-4a5e-8b21-9902ff4377ec" msprop:DbColumnName="Dia" msprop:FriendlyName="Dia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NroSemana" msprop:design-time-name="0f700793-b319-425d-bbfd-27da326ad0f8" msprop:DbColumnName="NroSemana" msprop:FriendlyName="NroSemana" type="xs:int" minOccurs="0" />
+                  <xs:element name="CodMes" msprop:design-time-name="dc2de977-0261-4ab0-be38-e09b46a21138" msprop:DbColumnName="CodMes" msprop:FriendlyName="CodMes" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NroMes" msprop:design-time-name="fac266d5-a140-4a36-858d-2b9f392d3936" msprop:DbColumnName="NroMes" msprop:FriendlyName="NroMes" type="xs:int" minOccurs="0" />
+                  <xs:element name="DesMes" msprop:design-time-name="e124253b-3856-4a62-8eaa-5b90b22dce35" msprop:DbColumnName="DesMes" msprop:FriendlyName="DesMes" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Anio" msprop:design-time-name="334f178a-6acc-4fdf-9a57-ce19540f1dc3" msprop:DbColumnName="Anio" msprop:FriendlyName="Anio" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMGuia_Remision" msprop:design-time-name="2200a2c1-8606-4e4d-bc06-4e7de88b3bb1" msprop:DbTableName="DIMGuia_Remision" msprop:FriendlyName="DIMGuia_Remision" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Guia_RemisionID" msprop:design-time-name="25d972ef-1237-4592-9da8-951138a34081" msprop:DbColumnName="Guia_RemisionID" msprop:FriendlyName="Guia_RemisionID" type="xs:int" />
+                  <xs:element name="Descripcion" msprop:design-time-name="f549aa48-01ff-4c04-a6fe-dff5820cde84" msprop:DbColumnName="Descripcion" msprop:FriendlyName="Descripcion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="b2509d20-6630-474b-87f9-2a73504227cc" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMMercaderia" msprop:design-time-name="3e3ef4e1-3b9c-4f5d-8184-a78e020bdd3d" msprop:DbTableName="DIMMercaderia" msprop:FriendlyName="DIMMercaderia" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MercaderiaID" msprop:design-time-name="a40c400a-ee15-417c-8d8f-2bba25ab5d23" msprop:DbColumnName="MercaderiaID" msprop:FriendlyName="MercaderiaID" type="xs:int" />
+                  <xs:element name="Descripcion" msprop:design-time-name="de98d235-d3dc-4897-a4da-8fbe1120e8ab" msprop:DbColumnName="Descripcion" msprop:FriendlyName="Descripcion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tipo" msprop:design-time-name="b4173ce6-28ba-4242-b81e-3a2390865d82" msprop:DbColumnName="Tipo" msprop:FriendlyName="Tipo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Medida" msprop:design-time-name="d05b16fc-ac9e-45ed-a7a5-2e996f3b4cd2" msprop:DbColumnName="Medida" msprop:FriendlyName="Medida" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Peso" msprop:design-time-name="bda93611-1005-46d6-ba7d-fc144586b1c4" msprop:DbColumnName="Peso" msprop:FriendlyName="Peso" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="228ae315-c56e-4928-9ce6-6d18948dc44e" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMOrden_Venta" msprop:design-time-name="bc07d74e-b021-402b-807a-438e90fcfb5b" msprop:DbTableName="DIMOrden_Venta" msprop:FriendlyName="DIMOrden_Venta" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Orden_VentaID" msprop:design-time-name="e5ca3586-e44c-4917-8b24-3c7ca16efc46" msprop:DbColumnName="Orden_VentaID" msprop:FriendlyName="Orden_VentaID" type="xs:int" />
+                  <xs:element name="Descripcion" msprop:design-time-name="216c287d-793e-47b1-8530-c483e9a5e5df" msprop:DbColumnName="Descripcion" msprop:FriendlyName="Descripcion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tipo" msprop:design-time-name="4108cff1-c915-4deb-8b5d-1d18d3554740" msprop:DbColumnName="Tipo" msprop:FriendlyName="Tipo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMSolucion" msprop:design-time-name="c89e284c-c683-449d-8ee1-c4470007c072" msprop:DbTableName="DIMSolucion" msprop:FriendlyName="DIMSolucion" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SolucionID" msprop:design-time-name="c8355ff0-2262-4a83-b051-b33cedb97192" msprop:DbColumnName="SolucionID" msprop:FriendlyName="SolucionID" type="xs:int" />
+                  <xs:element name="Descripcion" msprop:design-time-name="c27b673f-0eb0-41b9-85b7-c015afd695f6" msprop:DbColumnName="Descripcion" msprop:FriendlyName="Descripcion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="1fed96b2-b69b-4e99-af25-b50415035d23" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tipo" msprop:design-time-name="0b0f822c-f604-423d-91ea-26b91052c51c" msprop:DbColumnName="Tipo" msprop:FriendlyName="Tipo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIMVehiculo" msprop:design-time-name="4d8fb7da-000b-42e2-b0d7-98c80f31794b" msprop:DbTableName="DIMVehiculo" msprop:FriendlyName="DIMVehiculo" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="VehiculoID" msprop:design-time-name="75790f79-005d-4da2-92cb-ff9240717f75" msprop:DbColumnName="VehiculoID" msprop:FriendlyName="VehiculoID" type="xs:int" />
+                  <xs:element name="Modelo" msprop:design-time-name="ae630039-83ce-4408-b319-b19a34719db3" msprop:DbColumnName="Modelo" msprop:FriendlyName="Modelo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Placa" msprop:design-time-name="5a16de57-5064-4eb9-9be8-7495d1c889e2" msprop:DbColumnName="Placa" msprop:FriendlyName="Placa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tipo" msprop:design-time-name="1b3e9913-c5d8-4792-bc28-a8fbe72cf606" msprop:DbColumnName="Tipo" msprop:FriendlyName="Tipo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="9228c3ef-2312-4b50-b8bb-f9c7a3bf1bae" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACTLogistica" msprop:design-time-name="df168b4d-9314-42b8-8c68-ca4ace0ce8ef" msprop:DbTableName="FACTLogistica" msprop:FriendlyName="FACTLogistica" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LogisticaID" msprop:design-time-name="6b4d87ae-4316-4847-95b3-db819030f851" msprop:DbColumnName="LogisticaID" msprop:FriendlyName="LogisticaID" type="xs:int" />
+                  <xs:element name="MercaderiaID" msprop:design-time-name="c6e6164b-d72b-4dc9-b802-6919233ceb39" msprop:DbColumnName="MercaderiaID" msprop:FriendlyName="MercaderiaID" type="xs:int" minOccurs="0" />
+                  <xs:element name="AlmacenID" msprop:design-time-name="5e962ea0-a3fa-47e2-b994-7eb01a08c0d7" msprop:DbColumnName="AlmacenID" msprop:FriendlyName="AlmacenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="VehiculoID" msprop:design-time-name="e75a829b-e9df-4c05-8476-4068ffa363e8" msprop:DbColumnName="VehiculoID" msprop:FriendlyName="VehiculoID" type="xs:int" minOccurs="0" />
+                  <xs:element name="ClienteID" msprop:design-time-name="226d6c5e-e151-4313-891d-52110de3a008" msprop:DbColumnName="ClienteID" msprop:FriendlyName="ClienteID" type="xs:int" minOccurs="0" />
+                  <xs:element name="EnvioID" msprop:design-time-name="0d8f0330-7473-4a58-a7e7-19925f1bd847" msprop:DbColumnName="EnvioID" msprop:FriendlyName="EnvioID" type="xs:int" minOccurs="0" />
+                  <xs:element name="EmpleadoID" msprop:design-time-name="69ea7c35-e471-4163-a9ed-2033da3e4149" msprop:DbColumnName="EmpleadoID" msprop:FriendlyName="EmpleadoID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FechaID" msprop:design-time-name="39489973-87c6-471b-a73b-0397e7e47e2f" msprop:DbColumnName="FechaID" msprop:FriendlyName="FechaID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Guia_RemisionID" msprop:design-time-name="892ae419-c910-4362-ad32-bd198cb5463d" msprop:DbColumnName="Guia_RemisionID" msprop:FriendlyName="Guia_RemisionID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_operaciones_exitosas" msprop:design-time-name="2d9978d7-757f-457f-bf84-80730f34e684" msprop:DbColumnName="Cantidad_operaciones_exitosas" msprop:FriendlyName="Cantidad_operaciones_exitosas" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_operaciones_fallidas" msprop:design-time-name="5c11de74-7510-40db-9b4b-a7ac76fc1767" msprop:DbColumnName="Cantidad_operaciones_fallidas" msprop:FriendlyName="Cantidad_operaciones_fallidas" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_operaciones_sin_vehiculos" msprop:design-time-name="1ef5db56-d96f-4288-8545-d59865c00674" msprop:DbColumnName="Cantidad_operaciones_sin_vehiculos" msprop:FriendlyName="Cantidad_operaciones_sin_vehiculos" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_mercaderia_en_almacen" msprop:design-time-name="0667aab1-664c-4ded-a62d-69907666a17f" msprop:DbColumnName="Cantidad_mercaderia_en_almacen" msprop:FriendlyName="Cantidad_mercaderia_en_almacen" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACTReclamos" msprop:design-time-name="932eddfa-7573-4d99-8c1c-35d6b60f3604" msprop:DbTableName="FACTReclamos" msprop:FriendlyName="FACTReclamos" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ReclamosID" msprop:design-time-name="f6224600-c673-4b47-956a-bd09891b4676" msprop:DbColumnName="ReclamosID" msprop:FriendlyName="ReclamosID" type="xs:int" />
+                  <xs:element name="VehiculoID" msprop:design-time-name="1298edae-9605-459b-958a-f9f2a070afed" msprop:DbColumnName="VehiculoID" msprop:FriendlyName="VehiculoID" type="xs:int" minOccurs="0" />
+                  <xs:element name="ClienteID" msprop:design-time-name="54d97937-3919-4ea2-868a-b87f9d5f0c63" msprop:DbColumnName="ClienteID" msprop:FriendlyName="ClienteID" type="xs:int" minOccurs="0" />
+                  <xs:element name="EmpleadoID" msprop:design-time-name="35b59d89-945e-4f75-b3f7-a99f2036cdd0" msprop:DbColumnName="EmpleadoID" msprop:FriendlyName="EmpleadoID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SolucionID" msprop:design-time-name="6d9e30ac-92cf-4e30-a75d-88422d1c8096" msprop:DbColumnName="SolucionID" msprop:FriendlyName="SolucionID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FechaID" msprop:design-time-name="a6da33dd-4214-4b0f-83c2-1f4bd17f047f" msprop:DbColumnName="FechaID" msprop:FriendlyName="FechaID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Guia_RemisionID" msprop:design-time-name="5ea585f7-0214-4b7a-a19f-63e87ab6e5df" msprop:DbColumnName="Guia_RemisionID" msprop:FriendlyName="Guia_RemisionID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_reclamos_solucionados" msprop:design-time-name="8c904d53-e1a5-4ee9-9770-7c1c211e6ff3" msprop:DbColumnName="Cantidad_reclamos_solucionados" msprop:FriendlyName="Cantidad_reclamos_solucionados" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_reclamos_nosolucionados" msprop:design-time-name="fd4e8dda-1a6f-4ecd-b09d-fc50a87f6c0f" msprop:DbColumnName="Cantidad_reclamos_nosolucionados" msprop:FriendlyName="Cantidad_reclamos_nosolucionados" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACTVentas" msprop:design-time-name="ac429832-696d-404d-bbc9-33f5892c0ef0" msprop:DbTableName="FACTVentas" msprop:FriendlyName="FACTVentas" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="VentasID" msprop:design-time-name="90bcbe60-c288-4b7b-978d-174575c1b275" msprop:DbColumnName="VentasID" msprop:FriendlyName="VentasID" type="xs:int" />
+                  <xs:element name="MercaderiaID" msprop:design-time-name="bd40e7c8-49c9-413c-95ef-e95fde37ac74" msprop:DbColumnName="MercaderiaID" msprop:FriendlyName="MercaderiaID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Orden_VentaID" msprop:design-time-name="bf9e1adb-52c2-4cdc-ad41-a827a0f41903" msprop:DbColumnName="Orden_VentaID" msprop:FriendlyName="Orden_VentaID" type="xs:int" minOccurs="0" />
+                  <xs:element name="ClienteID" msprop:design-time-name="af2288a9-f3ac-4c8a-9fbb-cb1acd611ceb" msprop:DbColumnName="ClienteID" msprop:FriendlyName="ClienteID" type="xs:int" minOccurs="0" />
+                  <xs:element name="EmpleadoID" msprop:design-time-name="23029db0-f670-4287-bac5-6218040f09fd" msprop:DbColumnName="EmpleadoID" msprop:FriendlyName="EmpleadoID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FechaID" msprop:design-time-name="c743de89-684e-49ee-92bb-a9f4dfb9cdf8" msprop:DbColumnName="FechaID" msprop:FriendlyName="FechaID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_ventas_mercaderia_semidaniada" msprop:design-time-name="0f6960de-4f31-4658-84b1-cb36dff7d7ff" msprop:DbColumnName="Cantidad_ventas_mercaderia_semidaniada" msprop:FriendlyName="Cantidad_ventas_mercaderia_semidaniada" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_ventas_mes" msprop:design-time-name="9d096335-91df-42b6-86ad-6a1b9f0d87fa" msprop:DbColumnName="Cantidad_ventas_mes" msprop:FriendlyName="Cantidad_ventas_mes" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cantidad_ventas_empleados_vigentes" msprop:design-time-name="c74e39fc-35a5-47a2-aa07-b69b57353002" msprop:DbColumnName="Cantidad_ventas_empleados_vigentes" msprop:FriendlyName="Cantidad_ventas_empleados_vigentes" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMAlmacen" />
+          <xs:field xpath="AlmacenID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMCliente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMCliente" />
+          <xs:field xpath="ClienteID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMEmpleado_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMEmpleado" />
+          <xs:field xpath="EmpleadoID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMEnvio_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMEnvio" />
+          <xs:field xpath="EnvioID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMFecha_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMFecha" />
+          <xs:field xpath="FechaID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMGuia_Remision_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMGuia_Remision" />
+          <xs:field xpath="Guia_RemisionID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMMercaderia_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMMercaderia" />
+          <xs:field xpath="MercaderiaID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMOrden_Venta_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMOrden_Venta" />
+          <xs:field xpath="Orden_VentaID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMSolucion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMSolucion" />
+          <xs:field xpath="SolucionID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIMVehiculo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIMVehiculo" />
+          <xs:field xpath="VehiculoID" />
+        </xs:unique>
+        <xs:unique name="dbo_FACTLogistica_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACTLogistica" />
+          <xs:field xpath="LogisticaID" />
+        </xs:unique>
+        <xs:unique name="dbo_FACTReclamos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACTReclamos" />
+          <xs:field xpath="ReclamosID" />
+        </xs:unique>
+        <xs:unique name="dbo_FACTVentas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACTVentas" />
+          <xs:field xpath="VentasID" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="FACTLogistica-DIMMercaderia" msdata:parent="dbo_DIMMercaderia" msdata:child="dbo_FACTLogistica" msdata:parentkey="MercaderiaID" msdata:childkey="MercaderiaID" />
+          <msdata:Relationship name="FACTLogistica-DIMAlmacen" msdata:parent="dbo_DIMAlmacen" msdata:child="dbo_FACTLogistica" msdata:parentkey="AlmacenID" msdata:childkey="AlmacenID" />
+          <msdata:Relationship name="FACTLogistica-DIMVehiculo" msdata:parent="dbo_DIMVehiculo" msdata:child="dbo_FACTLogistica" msdata:parentkey="VehiculoID" msdata:childkey="VehiculoID" />
+          <msdata:Relationship name="FACTLogistica-DIMCliente" msdata:parent="dbo_DIMCliente" msdata:child="dbo_FACTLogistica" msdata:parentkey="ClienteID" msdata:childkey="ClienteID" />
+          <msdata:Relationship name="FACTLogistica-DIMEnvio" msdata:parent="dbo_DIMEnvio" msdata:child="dbo_FACTLogistica" msdata:parentkey="EnvioID" msdata:childkey="EnvioID" />
+          <msdata:Relationship name="FACTLogistica-DIMEmpleado" msdata:parent="dbo_DIMEmpleado" msdata:child="dbo_FACTLogistica" msdata:parentkey="EmpleadoID" msdata:childkey="EmpleadoID" />
+          <msdata:Relationship name="FACTLogistica-DIMFecha" msdata:parent="dbo_DIMFecha" msdata:child="dbo_FACTLogistica" msdata:parentkey="FechaID" msdata:childkey="FechaID" />
+          <msdata:Relationship name="FACTLogistica-DIMGuia_Remision" msdata:parent="dbo_DIMGuia_Remision" msdata:child="dbo_FACTLogistica" msdata:parentkey="Guia_RemisionID" msdata:childkey="Guia_RemisionID" />
+          <msdata:Relationship name="FACTReclamos-DIMVehiculo" msdata:parent="dbo_DIMVehiculo" msdata:child="dbo_FACTReclamos" msdata:parentkey="VehiculoID" msdata:childkey="VehiculoID" />
+          <msdata:Relationship name="FACTReclamos-DIMCliente" msdata:parent="dbo_DIMCliente" msdata:child="dbo_FACTReclamos" msdata:parentkey="ClienteID" msdata:childkey="ClienteID" />
+          <msdata:Relationship name="FACTReclamos-DIMEmpleado" msdata:parent="dbo_DIMEmpleado" msdata:child="dbo_FACTReclamos" msdata:parentkey="EmpleadoID" msdata:childkey="EmpleadoID" />
+          <msdata:Relationship name="FACTReclamos-DIMSolucion" msdata:parent="dbo_DIMSolucion" msdata:child="dbo_FACTReclamos" msdata:parentkey="SolucionID" msdata:childkey="SolucionID" />
+          <msdata:Relationship name="FACTReclamos-DIMFecha" msdata:parent="dbo_DIMFecha" msdata:child="dbo_FACTReclamos" msdata:parentkey="FechaID" msdata:childkey="FechaID" />
+          <msdata:Relationship name="FACTReclamos-DIMGuia_Remision" msdata:parent="dbo_DIMGuia_Remision" msdata:child="dbo_FACTReclamos" msdata:parentkey="Guia_RemisionID" msdata:childkey="Guia_RemisionID" />
+          <msdata:Relationship name="FACTVentas-DIMMercaderia" msdata:parent="dbo_DIMMercaderia" msdata:child="dbo_FACTVentas" msdata:parentkey="MercaderiaID" msdata:childkey="MercaderiaID" />
+          <msdata:Relationship name="FACTVentas-DIMOrden_Venta" msdata:parent="dbo_DIMOrden_Venta" msdata:child="dbo_FACTVentas" msdata:parentkey="Orden_VentaID" msdata:childkey="Orden_VentaID" />
+          <msdata:Relationship name="FACTVentas-DIMCliente" msdata:parent="dbo_DIMCliente" msdata:child="dbo_FACTVentas" msdata:parentkey="ClienteID" msdata:childkey="ClienteID" />
+          <msdata:Relationship name="FACTVentas-DIMEmpleado" msdata:parent="dbo_DIMEmpleado" msdata:child="dbo_FACTVentas" msdata:parentkey="EmpleadoID" msdata:childkey="EmpleadoID" />
+          <msdata:Relationship name="FACTVentas-DIMFecha" msdata:parent="dbo_DIMFecha" msdata:child="dbo_FACTVentas" msdata:parentkey="FechaID" msdata:childkey="FechaID" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <TF_Transiboc xmlns="" />
+  </Schema>
+</DataSourceView>
